@@ -1,6 +1,83 @@
-<mat-toolbar class="header-color">
-  <mat-toolbar-row>
-    <img src="./../assets/images/wesko-eLock_logo.jpg" style="height: 100%;padding: 4px"/>
-  </mat-toolbar-row>
+<div fxLayout="column">
+  <div fxFlex>
+    <mat-toolbar class="header-color">
+      <mat-toolbar-row>
+        <img src="./../assets/images/wesko-eLock_logo.jpg" style="height: 100%;padding: 4px" />
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+  <div layout-gt-sm="row" flex="noshrink">
+    <div fxFlex="60%">
+      <div layout="row" flex="100" flex-md="55" flex-gt-md="60">
+        <div fxLayout="column" class="mid_section" layout-margin layout-padding>
+          <div fxFlex="20%" layout="row" layout-align="center center" class="item">
+              <h2 style="font-weight:600" ayout-align="center center">
+                  Welcome to Wesko eLocks Cloud Management Portal
+                </h2>
+          </div>
+          <div fxFlex="20%">
+            <div fxFlex="10%" layout="row" layout-align="start center">
+              <div>
+                <i class="material-icons info_icons md-36" aria-hidden="false">
+                  lock_outline
+                </i>
+              </div>
+            </div>
+            <div fxFlex="90%">
+              <div>
+                <div class="title">Manage Lock Users</div>
+                <div class="md-subhead">and remotely setup on locks</div>
+              </div>
+            </div>
+          </div>
+          <div fxFlex="20%" layout="row" layout-align="start center">
+            <div fxFlex="10%">
+              <i class="material-icons info_icons md-36" aria-hidden="false">
+                person_add
+              </i>
+            </div>
+            <div fxFlex="90%">
+              <div class="title">Remotely Control Locks</div>
+              <div class="md-subhead">if users forget their password</div>
+            </div>
 
+          </div>
+          <div fxFlex="20%" layout="row" layout-align="start center">
+
+            <div fxFlex="10%">
+              <i class="material-icons info_icons md-36" aria-hidden="false">
+                brightness_7
+              </i>
+            </div>
+            <div fxFlex="90%">
+              <div class="title">Display Real Time Lock Status</div>
+              <div class="md-subhead">and change lock settings</div>
+            </div>
+
+          </div>
+          <div fxFlex="20%">
+            <div>
+              <div class="md-list-item-text">
+                <img flex="" src="assets/images/wesko_lock.png" class="wesko_lock_image flex">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div fxFlex="40%">
+      <div style="height: 500px; width: 500px">
+          login area
+          <label>User Name</label>
+          <input>
+          <label>password</label>
+          <input>
+          <button mat-button color="primary">login</button>
+          <button mat-button color="primary">cancel</button>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
 <router-outlet></router-outlet>
