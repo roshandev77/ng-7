@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule} from './material';
+import { freeApiService } from './services/freeapi.service'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import {MaterialModule} from './material';
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [freeApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
