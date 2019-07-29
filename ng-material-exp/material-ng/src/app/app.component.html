@@ -1,6 +1,29 @@
-<mat-toolbar class="header-color">
-  <mat-toolbar-row>
-    <img src="./../assets/images/wesko-eLock_logo.jpg" style="height: 100%;padding: 4px"/>
-  </mat-toolbar-row>
+<mat-toolbar class="header">
+  <div class="mat-toolbar-tools">
+    <img src="../assets/images/wesko-eLock_logo.jpg" style="height: 100%;padding: 4px" />
+  </div>
+
+  <div ng-if="isUserLoggedIn">
+      <div layout="row" layout-align="center center" class="account-person">
+          <!-- <i class="material-icons person_icon cursor_pointer">account_circle</i> -->
+          <img class="account-circle-img" src="./../assets/images/account-circle-white.png" />
+      </div>
+  </div>
+  <!-- <div class="account-person">
+      <i class="material-icons cursor_pointer person_icon">account_circle</i>
+    </div> -->
+</mat-toolbar>
+
+
+
+
+
+
+
+<!-- <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+  <div fxFlex="15%">Item 1</div>
+  <div fxFlex="20%">Item 2</div>
+  <div fxFlex="">Item 3</div>
+</div> -->
 
 <router-outlet></router-outlet>
