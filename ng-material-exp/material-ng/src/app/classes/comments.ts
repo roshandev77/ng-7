@@ -1,7 +1,11 @@
 export class Comments {
-    postId: number;
     id: number;
-    name: string;
+    emailHash: string;
     email: string;
-    body: string;
+    firstName: string;
+    lastName: string;
+    employeeId: string;
+    division: string;
+    status: string;
+    scopeId: string;
 }

@@ -9,6 +9,6 @@ export class freeApiService {
 
     }
     getcomments(): Observable<any> {
-        return this.httpclient.get("https://jsonplaceholder.typicode.com/posts/1/comments");
+        return this.httpclient.get("http://192.168.50.24/v1/iot_service/users");
     }
 }
