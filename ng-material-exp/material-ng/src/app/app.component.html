@@ -11,9 +11,9 @@
       <div layout="row" flex="100" flex-md="55" flex-gt-md="60">
         <div fxLayout="column" class="mid_section" layout-margin layout-padding>
           <div fxFlex="20%" layout="row" layout-align="center center" class="item">
-              <h2 style="font-weight:600" ayout-align="center center">
-                  Welcome to Wesko eLocks Cloud Management Portal
-                </h2>
+            <h2 style="font-weight:600" ayout-align="center center">
+              Welcome to Wesko eLocks Cloud Management Portal
+            </h2>
           </div>
           <div fxFlex="20%">
             <div fxFlex="10%" layout="row" layout-align="start center">
@@ -67,24 +67,22 @@
     </div>
     <div fxFlex="40%">
       <div>
-        <div *ngFor="let com of lstcomments">
-          <span>{{com.id}}</span>
-          <span>{{com.postId}}</span>
-          <span>{{com.name}}</span>
-          <span>{{com.email}}</span>
-          <span>{{com.body}}</span>
+        <div> Authentication token
+          <span>{{displayToken}}</span>
         </div>
-          login area
+        login area
+        <form>
           <label>User Name</label>
-          <input>
+          <input name="email" [ngModel]="email">
           <label>password</label>
-          <input>
-          <button mat-button color="primary">login</button>
+          <input name="password" [ngModel]="password">
+          <button mat-button color="primary" (click)="doLogin()">login</button>
           <button mat-button color="primary">cancel</button>
+        </form>
       </div>
-      
+
     </div>
-    
+
   </div>
 </div>
 <router-outlet></router-outlet>
